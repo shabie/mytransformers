@@ -33,5 +33,8 @@ fetch_model(url, download_dir=".", files_to_save=files_to_save, upload_to_kaggle
 
 The example above can be found in the folder `examples`.
 
+
+![example of fetch model](examples/example.svg)
+
 ## License
 MIT

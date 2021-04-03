@@ -197,14 +197,12 @@ def fetch_model(model_url, download_dir, files_to_save=None, upload_to_kaggle=Fa
         print(
             Back.CYAN
             + Fore.BLACK
-            + Style.BRIGHT
             + "****** Folder uploaded successfully ******"
             + Style.RESET_ALL
         )
         print(
-            Back.LIGHTYELLOW_EX
+            Back.YELLOW
             + Fore.BLACK
-            + Style.BRIGHT
             + f"URL (may take time to load): https://kaggle.com/{username}/{slug}"
             + Style.RESET_ALL
         )

@@ -3,7 +3,7 @@ from mytransformers.downloaders import fetch_model
 
 # set to None for all files
 files_to_save = [
-    "pytorch_model.bin",
+    # "pytorch_model.bin",
     "config.json",
     "tokenizer_config.json",
     "vocab.json",
