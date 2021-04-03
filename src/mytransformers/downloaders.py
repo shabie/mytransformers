@@ -148,7 +148,6 @@ def fetch_model(model_url, download_dir, files_to_save=None, upload_to_kaggle=Fa
     print(
         Back.CYAN
         + Fore.BLACK
-        + Style.BRIGHT
         + "Downloading files if necessary..."
         + Style.RESET_ALL
     )
@@ -203,6 +202,6 @@ def fetch_model(model_url, download_dir, files_to_save=None, upload_to_kaggle=Fa
         print(
             Back.YELLOW
             + Fore.BLACK
-            + f"URL (may take time to load): https://kaggle.com/{username}/{slug}"
+            + f"URL (needs few secs to be available): https://kaggle.com/{username}/{slug}"
             + Style.RESET_ALL
         )
