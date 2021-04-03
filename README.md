@@ -1,6 +1,6 @@
 # My Transformers
 
-This is a very small package to download HuggingFace transformer model repos to disk. It can also
+This is a very small package to download HuggingFace 🤗 transformer model (repositories) to disk. It can also
 be used to upload the models to Kaggle (which is handy for kernel competitions).
 
 Apart from uploading to Kaggle, this has the advantage that models are not loaded to memory when being downloaded.
