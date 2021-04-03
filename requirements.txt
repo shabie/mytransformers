@@ -1,0 +1,5 @@
+kaggle
+Pygments
+transformers==4
+beautifulsoup4
+colorama
