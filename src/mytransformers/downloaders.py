@@ -146,10 +146,7 @@ def fetch_model(model_url, download_dir, files_to_save=None, upload_to_kaggle=Fa
     soup = bs4.BeautifulSoup(response.content, "html.parser")
     download_urls = get_filepaths(soup, corrected_model_url)
     print(
-        Back.CYAN
-        + Fore.BLACK
-        + "Downloading files if necessary..."
-        + Style.RESET_ALL
+        Back.CYAN + Fore.BLACK + "Downloading files if necessary..." + Style.RESET_ALL
     )
     model_id = extract_model_id(corrected_model_url)
 
@@ -176,8 +173,10 @@ def fetch_model(model_url, download_dir, files_to_save=None, upload_to_kaggle=Fa
 
         slug = re.sub("[^A-Za-z0-9]", "-", slug)
         dataset_name = f"HuggingFace {model_name}"
-        if len(dataset_name) > 50:
-            raise ValueError
+        ds_name_len = len(dataset_name)
+        if ds_name_len > 50:
+            msg = f"Dataset name is {ds_name_len} chars. Maximum allowed 50."
+            raise ValueError(msg)
         username = api.config_values["username"]
         metadata = {
             "title": dataset_name,
