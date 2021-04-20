@@ -9,6 +9,10 @@ Apart from uploading to Kaggle, this has the advantage that models are not loade
 
 `pip install git+ssh://git@github.com/shabie/mytransformers.git`
 
+or 
+
+`pip install git+https://github.com/shabie/mytransformers`
+
 ## Usage
 It only consists of one function really and relies on APIs of `transformers` libary and `kaggle`
 api.
